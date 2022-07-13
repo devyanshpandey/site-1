@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <center>
+    <h1>Devyansh's Site (Heading 1)</h1> <!-- Heading -->
+    <p>Amateur Web Developer</p><!-- Tag for writing content -->
+    <p><em>This text is in Italics</em></p> <!-- This will italicise the text, used over the "<i>" -->
+    <p><strong>This text is in bold</strong></p> <!-- this will bolden the text, used over the "<<b>"-->
+  </center>
+  <hr size="2"> <!-- Added horizontal line -->
+  <center>
+    <p>This is the bio, blah blah blah</p>
+  </center>
+  <hr size="4" noshade> <!-- Added horizontal line -->
+  <h2>This is heading 2</h2>
+  <h3>Lists in Html (h3)</h3>
+  <strong>Bullet List (unordered)</strong>
+  <ul>
+    <!-- unordered list tag -->
+    <li>this</li> <!-- list items -->
+    <li>is</li>
+    <li>a</li>
+    <li>bullet</li>
+    <li>list</li>
+  </ul>
+  <p>OR</p>
+  <ul>
+    <li>alternatively</li> <!-- nested the list -->
+    <ul>
+      <li>This can</li>
+      <ul>
+        <li>also be a</li>
+        <ul>
+          <li>bullet list</li>
+        </ul>
+      </ul>
+    </ul>
+  </ul>
+  <hr>
+  <strong>Numbered List (ordered)</strong>
+  <ol>
+    <li>One</li>
+    <li>Two</li>
+  </ol>
+  <p><strong>Roman Numerals</strong></p>
+  <ol type="i">
+    <!-- This list is in Roman Numerals -->
+    <li>One</li>
+    <li>Two</li>
+  </ol>
+  <p><strong>This list starts from different number</strong></p>
+  <ol start="2">
+    <!-- This list starts from "2"-->
+    <li>this list</li>
+    <li>starts from</li>
+    <li>the number 2</li>
+  </ol>
+</body>
+<hr>
+<img src="https://images.hindustantimes.com/tech/img/2022/06/21/960x540/iPhone-14-Pro-Purple-Vertical_1653567948965_1655836594761.jpeg" alt="This is an Image of an iPhone 14 Pro">
+<!-- This is the image tag, self closing. Src is source and it can be a URL or the saved image on your PC,
+  alt is alternative text that tells you what the image was if the browser can't render -->
+<img src="14.webp" alt="14pro"> <!-- Saved the image the same folder and it will pick it up from there, reduces dependence on file hosting for image -->
+<img src="img/14.webp" alt="14pro"> <!-- Saved the image in a different folder and then specified the path to the image -->
+<hr>
+<p>Now I'll link to <a href="www.google.co.in">Google India</a> </p>
+<!-- anchor tag, for hyperlink, can engage the tag by typing "a" -->
+<p>Anchor Tag list</p>
+<ol>
+  <li> <a href="https://www.bestbuy.com/#?intl=nosplash">Best Buy</a> </li>
+  <li><a href="hyperlinkedpage.html">Link to a separate page</a></li>
+</ol>
+<hr>
+<p>Now I'll create a Table</p>
+<table>
+  <!-- This is the syntax to engage the table function -->
+  <tr>
+    <!-- syntax to define a table row -->
+    <td>A</td> <!-- syntax to write the content, it writes content in a single row -->
+    <td>B</td> <!-- this will look like 'A B' -->
+  </tr> <!-- we need a different row for other elements -->
+  <tr>
+    <!-- every time you need a new row you have to engage this command -->
+    <td>C</td>
+    <td>D</td>
+  </tr>
+</table> <!-- table end -->
+<p>Now I'll make a better table</p>
+<table>
+  <thead>
+    <!-- table header command -->
+    <tr>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>C</td>
+    <td>D</td>
+  </tr>
+</table>
+<p>A,B are table heads and C,D is the data</p>
+<hr>
+<table>
+  <tr>
+    <td><img src="https://images.hindustantimes.com/tech/img/2022/06/21/960x540/iPhone-14-Pro-Purple-Vertical_1653567948965_1655836594761.jpeg" alt="This is an Image of an iPhone 14 Pro">
+</td>
+<td>This is an image of an iPhone 14 Pro</td>
+  </tr>
+</table>
+<p>We can also put pics in our table</p>
+<hr>
+<p>We can also add space between elements of the table by using "cellspracing" attribute where we can set the spacing in terms of percentage or pixels</p>
+<table cellspacing="30">
+<tr>
+  <td><img src="https://images.hindustantimes.com/tech/img/2022/06/21/960x540/iPhone-14-Pro-Purple-Vertical_1653567948965_1655836594761.jpeg" alt="This is an Image of an iPhone 14 Pro">
+</td>
+<td>This is an image of an iPhone 14 Pro</td>
+</tr>
+</table>
+<hr>
+<p>Now I'll make a table on my own</p>
+<table cellspacing="10">
+<thead>
+  <tr>
+    <td>#</td>
+    <td>*</td>
+    <td>#</td>
+    <td>*</td>
+  </tr>
+</thead>
+  <tr>
+    <td>10</td>
+    <td>**********</td>
+    <td>5</td>
+    <td>*****</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>*********</td>
+    <td>4</td>
+    <td>****</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>********</td>
+    <td>3</td>
+    <td>***</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>*******</td>
+    <td>2</td>
+    <td>**</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>******</td>
+    <td>1</td>
+    <td>*</td>
+  </tr>
+</table>
+<hr>
+<p>Now I'll make a form using "form" attribute.</p>
+<form class="" action="index.html" method="post">
+<label>Login ID : </label>
+<input type="text" name="" value=""> <!-- The "input" attribute provides a space to fill in the deatil. -->
+<br>
+<br>
+<label>Password : </label>
+<input type="password" name="" value=""> <!-- this makes the input of information secretive -->
+<input type="submit" name="" > <!-- The 'input' attribute can serve as a 'submit' button if you remove the "value" parameter from the syntax -->
+<br>
+<br>
+</form>
+<hr>
+<form class="" action="index.html" method="post">
+  <label>Email : </label>
+  <input type="text" name="" value="">
+
+</form>
+</html>
